@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyOwn</string>
+    <string name="title_activity_routes_list">RoutesListActivity</string>
+</resources>
