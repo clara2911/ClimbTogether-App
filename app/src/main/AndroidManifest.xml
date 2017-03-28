@@ -17,7 +17,6 @@
         </activity>
         <activity android:name=".AddRouteActivity" />
         <activity android:name=".ShowRouteActivity" />
-        <activity android:name=".MyTops" />
         <activity android:name=".RoutesListActivity" />
         <activity android:name=".RegisterLoginActivity"></activity>
     </application>

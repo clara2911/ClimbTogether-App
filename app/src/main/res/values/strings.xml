@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">MyOwn</string>
     <string name="title_activity_routes_list">RoutesListActivity</string>
+    <string name="add">Add</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="grade">Grade</string>
+    <string name="add_a_route">Add a route:</string>
+    <string name="welcome_to_climbup">Welcome to ClimbUp!</string>
+    <string name="continue_2">Continue</string>
+    <string name="logo_image">logo image</string>
+    <string name="register_or_login">Register or Login:</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="password_2">Password</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="sign_out">Sign out</string>
+    <string name="all_routes">All Routes</string>
+    <string name="name_not_found">Name not found</string>
+    <string name="description_of_route_not_found">Description of route not found</string>
+    <string name="image_of_route">Image of route</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signed_out">Signed out</string>
+    <string name="user_signed_out">User signed out</string>
+    <string name="auth_failed">Authentication failed.</string>
+    <string name="created_user">Created user</string>
+    <string name="logged_in_user">"logged in user: "</string>
+    <string name="db_error">Something went wrong:</string>
+    <string name="Tag">in RoutesListActivity</string>
 </resources>

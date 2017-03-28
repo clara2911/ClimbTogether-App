@@ -2,30 +2,53 @@ package com.example.clara.myown;
 
 import java.util.ArrayList;
 
-/**
- * Created by clara on 17-3-2017.
- */
+/*
+ * File: User.java
+ * Last edited: 28-3-2017
+ * By: Clara Tump
+ *
+ * This is the model class for a user of the app. */
 
 public class User {
-    public String email;
-    public String name;
-    public ArrayList<Route> toppedRoutes;
+    private String email;
+    private String name;
+    private ArrayList<Route> savedRoutes;
 
+    // Default constructor for Firebase
     public User() {}
 
     public User(String email, String name) {
         this.email = email;
         this.name = name;
-        this.toppedRoutes = new ArrayList<Route>();
+        this.savedRoutes = new ArrayList<>();
     }
 
     public User(String email, String name, ArrayList<Route> routes) {
         this.email = email;
         this.name = name;
-        this.toppedRoutes = routes;
+        this.savedRoutes = routes;
     }
 
-    public void setToppedRoutes(ArrayList<Route> toppedRoutes) {
-        this.toppedRoutes = toppedRoutes;
+    public String getEmail() {
+        return email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Route> getSavedRoutes() {
+        return savedRoutes;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setSavedRoutes(ArrayList<Route> savedRoutes) {
+        this.savedRoutes = savedRoutes;
     }
 }

@@ -11,7 +11,7 @@
     tools:context="com.example.clara.myown.RegisterLoginActivity">
 
     <TextView
-        android:text="Register or Login:"
+        android:text="@string/register_or_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,15 +19,17 @@
         android:textSize="30sp"
         android:id="@+id/textView6" />
 
-    <Button
-        android:text="Login"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button12"
-        android:layout_alignEnd="@+id/button12"
-        android:id="@+id/button13"
-        android:onClick="login"/>
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:text="@string/email"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/etEmailLogin"
+        android:layout_alignStart="@+id/etEmailLogin"
+        android:layout_marginTop="39dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
         android:ems="10"
         android:layout_marginTop="16dp"
         android:id="@+id/etPassword"
-        android:text="Password"
+        android:text="@string/password"
         android:layout_below="@+id/etEmail"
         android:layout_alignLeft="@+id/etEmail"
         android:layout_alignStart="@+id/etEmail" />
@@ -45,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:text="@string/username"
         android:ems="10"
         android:layout_marginTop="11dp"
         android:id="@+id/etUsername"
@@ -53,43 +55,8 @@
         android:layout_alignLeft="@+id/etPassword"
         android:layout_alignStart="@+id/etPassword" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etPasswordLogin"
-        android:text="Password"
-        android:layout_above="@+id/button13"
-        android:layout_alignLeft="@+id/etEmailLogin"
-        android:layout_alignStart="@+id/etEmailLogin"
-        android:layout_marginBottom="26dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/etEmailLogin"
-        android:text="Email"
-        android:layout_alignBottom="@+id/etPasswordLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:text="Email"
-        android:id="@+id/etEmail"
-        android:layout_below="@+id/textView6"
-        android:layout_alignLeft="@+id/etEmailLogin"
-        android:layout_alignStart="@+id/etEmailLogin"
-        android:layout_marginTop="39dp" />
-
     <Button
-        android:text="Register"
+        android:text="@string/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button12"
@@ -98,4 +65,36 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmailLogin"
+        android:text="@string/email"
+        android:layout_alignBottom="@+id/etPasswordLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPasswordLogin"
+        android:text="@string/password_2"
+        android:layout_above="@+id/button13"
+        android:layout_alignLeft="@+id/etEmailLogin"
+        android:layout_alignStart="@+id/etEmailLogin"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button12"
+        android:layout_alignEnd="@+id/button12"
+        android:id="@+id/button13"
+        android:onClick="login"/>
 </RelativeLayout>
