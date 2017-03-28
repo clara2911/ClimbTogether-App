@@ -1,0 +1,8 @@
+exclude:
+- /app/src/androidTest/java/com/example/clara/myown/ExampleInstrumentedTest.java
+- /app/src/main/java/com/example/clara/myown/MyTops.java
+- /app/src/main/java/com/example/clara/myown/TopEvent.java
+- /app/src/test/java/com/example/clara/myown/ExampleUnitTest.java
+component_depth: 1
+languages:
+- java
